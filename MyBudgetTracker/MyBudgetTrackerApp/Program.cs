@@ -13,6 +13,7 @@ builder.Services.AddSingleton(new ConnectionStringData
 });
 builder.Services.AddSingleton<IDataAccess, SqlDb>();
 builder.Services.AddSingleton<IBankBalanceData, BankBalanceData>();
+builder.Services.AddSingleton<IExpenseData, ExpenseData>();
 //[-]Custom Services
 
 
