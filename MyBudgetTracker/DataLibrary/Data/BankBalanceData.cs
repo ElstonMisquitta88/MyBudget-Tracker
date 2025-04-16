@@ -22,7 +22,7 @@ public class BankBalanceData : IBankBalanceData
         _connectionString = connectionString;
     }
 
-    public async Task<bool> BankBalanceForMonth(BankBalanceModel _bankbal)
+    public async Task<bool> CreateBankBalanceForMonth(BankBalanceModel _bankbal)
     {
         DynamicParameters p = new DynamicParameters();
         p.Add("Month_Year", _bankbal.Month_Year);

@@ -1,0 +1,76 @@
+﻿@model MyBudgetTrackerApp.Models.BankBalanceCreateDisplayModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Monthly Bank Balance</h4>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="BankBal.Month_Year" class="control-label"></label>
+                <input asp-for="BankBal.Month_Year" class="form-control" />
+                <span asp-validation-for="BankBal.Month_Year" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="BankBal.Amount" class="control-label"></label>
+                <input asp-for="BankBal.Amount" class="form-control" />
+                <span asp-validation-for="BankBal.Amount" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" action value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+
+@* Display list of bank balances *@
+@if (Model.BankBalLst != null)
+{
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Month/Year</th>
+                <th scope="col">Total Amount in Bank</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+
+        @foreach (var _BankList in Model.BankBalLst)
+        {
+            <form asp-action="Update" method="post">
+                <input type="hidden" name="Id" value="@_BankList.Id" />
+            <tr>
+                <td><input type="text" name="Month_Year" value="@_BankList.Month_Year" class="form-control" /></td>
+                <td><input type="text" name="Amount" value="@_BankList.Amount" class="form-control" /></td>
+                <td style="width: 140px;">
+                    <button type="submit" name="actionType" value="AddExpense" class="btn btn-success">Add Expense</button>
+                </td>
+                <td style="width: 100px;">
+                    <button type="submit" name="actionType" value="Update" class="btn btn-primary">Update</button>
+                </td>
+                <td style="width: 100px;">
+                    <button type="submit" name="actionType" value="Delete" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+            </form>
+        }
+    </table>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+

@@ -4,6 +4,8 @@ namespace DataLibrary.Data
 {
     public interface IBankBalanceData
     {
-        Task<bool> BankBalanceForMonth(BankBalanceModel _bankbal);
+        Task<bool> CreateBankBalanceForMonth(BankBalanceModel _bankbal);
+
+        Task<List<BankBalanceModel>> GetAll_BankBalanceForMonth();
     }
 }

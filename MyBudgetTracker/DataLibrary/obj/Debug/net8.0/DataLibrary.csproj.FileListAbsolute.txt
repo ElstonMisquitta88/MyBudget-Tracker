@@ -1,6 +1,7 @@
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\bin\Debug\net8.0\DataLibrary.deps.json
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\bin\Debug\net8.0\DataLibrary.dll
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\bin\Debug\net8.0\DataLibrary.pdb
+D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\DataLibrary.csproj.AssemblyReference.cache
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\DataLibrary.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\DataLibrary.AssemblyInfoInputs.cache
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\DataLibrary.AssemblyInfo.cs
@@ -10,4 +11,3 @@ D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\DataLibr
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\refint\DataLibrary.dll
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\DataLibrary.pdb
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\ref\DataLibrary.dll
-D:\GitHub\MyBudget-Tracker\MyBudgetTracker\DataLibrary\obj\Debug\net8.0\DataLibrary.csproj.AssemblyReference.cache
