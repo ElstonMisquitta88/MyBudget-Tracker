@@ -3,7 +3,8 @@
     ViewData["Title"] = "Display";
 }
 
-<h1>Add Expense</h1>
+<span>Add Expense for : </span><span style="color: #007bff;">@Model.BankDetails.Month_Year</span>
+
 
 
 
@@ -15,17 +16,20 @@
 
             <input asp-for="ExpenseSingle.Bank_ID" class="form-control" type="hidden" />
 
-            <div class="form-group">
-                <label asp-for="ExpenseSingle.ExpenseDetails" class="control-label"></label>
-                <input asp-for="ExpenseSingle.ExpenseDetails" class="form-control" />
-                <span asp-validation-for="ExpenseSingle.ExpenseDetails" class="text-danger"></span>
+            <div class="form-row d-flex">
+                <div class="form-group col-md-6 me-3">
+                    <label asp-for="ExpenseSingle.ExpenseDetails" class="control-label"></label>
+                    <input asp-for="ExpenseSingle.ExpenseDetails" class="form-control" />
+                    <span asp-validation-for="ExpenseSingle.ExpenseDetails" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label asp-for="ExpenseSingle.Amount" class="control-label"></label>
+                    <input asp-for="ExpenseSingle.Amount" class="form-control" />
+                    <span asp-validation-for="ExpenseSingle.Amount" class="text-danger"></span>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label asp-for="ExpenseSingle.Amount" class="control-label"></label>
-                <input asp-for="ExpenseSingle.Amount" class="form-control" />
-                <span asp-validation-for="ExpenseSingle.Amount" class="text-danger"></span>
-            </div>
             <br />
             <div class="form-group">
                 <input type="submit" action value="AddExpense" class="btn btn-primary" />
@@ -60,13 +64,13 @@
                 <input type="hidden" name="Id" value="@_ExpenseList.Id" />
                 <input type="hidden" name="Bank_ID" value="@_ExpenseList.Bank_ID" />
             <tr>
-                <td><input type="text" name="ExpenseDetails" value="@_ExpenseList.ExpenseDetails" class="form-control" /></td>
-                <td><input type="text" name="Amount" value="@_ExpenseList.Amount" class="form-control amount" /></td>
-                <td><input type="text" readonly="readonly" name="Date" value="@_ExpenseList.Date" class="form-control" /></td>
-                <td style="width: 100px;">
+                <td style="width: 250px;"><input type="text" name="ExpenseDetails" value="@_ExpenseList.ExpenseDetails" class="form-control" /></td>
+                <td style="width: 250px;"><input type="text" name="Amount" value="@_ExpenseList.Amount" class="form-control amount" /></td>
+                <td style="width: 140px;"><input type="text" readonly="readonly" name="Date" value="@_ExpenseList.Date" class="form-control" /></td>
+                <td style="width: 80px;">
                     <button type="submit" name="actionType" value="Update" class="btn btn-primary">Update</button>
                 </td>
-                <td style="width: 100px;">
+                <td style="width: 80px;">
                     <button type="submit" name="actionType" value="Delete" class="btn btn-danger">Delete</button>
                 </td>
             </tr>

@@ -10,17 +10,20 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="BankBal.Month_Year" class="control-label"></label>
-                <input asp-for="BankBal.Month_Year" class="form-control" />
-                <span asp-validation-for="BankBal.Month_Year" class="text-danger"></span>
+            <div class="form-row d-flex">
+                <div class="form-group col-md-6 me-3">
+                    <label asp-for="BankBal.Month_Year" class="control-label">Month / Year</label>
+                    <input asp-for="BankBal.Month_Year" class="form-control" />
+                    <span asp-validation-for="BankBal.Month_Year" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label asp-for="BankBal.Amount" class="control-label"></label>
+                    <input asp-for="BankBal.Amount" class="form-control" />
+                    <span asp-validation-for="BankBal.Amount" class="text-danger"></span>
+                </div>
             </div>
 
-            <div class="form-group">
-                <label asp-for="BankBal.Amount" class="control-label"></label>
-                <input asp-for="BankBal.Amount" class="form-control" />
-                <span asp-validation-for="BankBal.Amount" class="text-danger"></span>
-            </div>
             <br />
             <div class="form-group">
                 <input type="submit" action value="Create" class="btn btn-primary" />
@@ -37,7 +40,7 @@
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Month/Year</th>
-                <th scope="col">Total Amount in Bank</th>
+                <th scope="col">Bank Balance</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
                 <th scope="col"></th>
