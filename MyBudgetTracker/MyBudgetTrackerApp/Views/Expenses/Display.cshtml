@@ -129,3 +129,31 @@
         });
     </script>
 }
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<h3>Expense Breakdown</h3>
+<div style="max-width: 600px; height: 300px; margin: auto;">
+    <canvas id="expenseChart"></canvas>
+</div>
+
+<script>
+    const ctx = document.getElementById('expenseChart');
+
+    const expenseChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: @Html.Raw(Json.Serialize(Model.ExpenseList.Select(e => e.ExpenseDetails))),
+            datasets: [{
+                label: 'Expenses by Category',
+                data: @Html.Raw(Json.Serialize(Model.ExpenseList.Select(e => e.Amount))),
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.7)',
+                    'rgba(54, 162, 235, 0.7)',
+                    'rgba(255, 206, 86, 0.7)',
+                    'rgba(75, 192, 192, 0.7)'
+                ],
+                borderWidth: 1
+            }]
+        }
+    });
+</script>

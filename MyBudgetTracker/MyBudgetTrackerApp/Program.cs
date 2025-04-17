@@ -1,7 +1,18 @@
 using DataLibrary.Data;
 using DataLibrary.Db;
+using Serilog;
 
+Log.Logger = new LoggerConfiguration()
+    .WriteTo.Console()
+    .WriteTo.File("Logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .WriteTo.Seq("http://localhost:5341")  //  Send logs to Seq
+    .Enrich.FromLogContext()
+    .MinimumLevel.Error()
+    .CreateLogger();
+
+Log.Information("Starting up the Budget Tracker App");
 var builder = WebApplication.CreateBuilder(args);
+builder.Host.UseSerilog(); // Plug Serilog into the host
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

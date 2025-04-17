@@ -9,10 +9,12 @@ namespace MyBudgetTrackerApp.Controllers
     public class BankBalanceController : Controller
     {
         private readonly IBankBalanceData _BankData;
+        private readonly ILogger<BankBalanceController> _logger;
 
-       public BankBalanceController(IBankBalanceData BankData)
+        public BankBalanceController(IBankBalanceData BankData, ILogger<BankBalanceController> logger)
         {
             _BankData = BankData;
+            _logger = logger;
         }
         public IActionResult Index()
         {
@@ -22,8 +24,10 @@ namespace MyBudgetTrackerApp.Controllers
 
         public async Task<IActionResult> Create()
         {
+            _logger.LogInformation("BankBalance Create GET called");
             BankBalanceCreateDisplayModel modeldt = new BankBalanceCreateDisplayModel();
             modeldt.BankBalLst = await _BankData.GetAll_BankBalanceForMonth();
+            _logger.LogInformation("BankBalance Create GET Returned");
             return View(modeldt);
         }
 

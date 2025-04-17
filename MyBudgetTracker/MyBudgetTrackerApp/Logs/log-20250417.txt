@@ -1,0 +1,113 @@
+2025-04-17 18:29:47.451 +05:30 [INF] Starting up the Budget Tracker App
+2025-04-17 18:29:47.909 +05:30 [INF] User profile is available. Using 'C:\Users\Elston\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-17 18:29:48.094 +05:30 [INF] Now listening on: https://localhost:7213
+2025-04-17 18:29:48.098 +05:30 [INF] Now listening on: http://localhost:5032
+2025-04-17 18:29:48.180 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 18:29:48.183 +05:30 [INF] Hosting environment: Development
+2025-04-17 18:29:48.183 +05:30 [INF] Content root path: D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp
+2025-04-17 18:30:12.377 +05:30 [INF] Starting up the Budget Tracker App
+2025-04-17 18:30:12.732 +05:30 [INF] User profile is available. Using 'C:\Users\Elston\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-17 18:30:12.810 +05:30 [INF] Now listening on: https://localhost:7213
+2025-04-17 18:30:12.813 +05:30 [INF] Now listening on: http://localhost:5032
+2025-04-17 18:30:12.847 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 18:30:12.850 +05:30 [INF] Hosting environment: Development
+2025-04-17 18:30:12.851 +05:30 [INF] Content root path: D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp
+2025-04-17 18:30:13.162 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/ - null null
+2025-04-17 18:30:13.277 +05:30 [INF] Executing endpoint 'MyBudgetTrackerApp.Controllers.HomeController.Index (MyBudgetTrackerApp)'
+2025-04-17 18:30:13.296 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyBudgetTrackerApp.Controllers.HomeController (MyBudgetTrackerApp).
+2025-04-17 18:30:13.305 +05:30 [INF] Executing ViewResult, running view Index.
+2025-04-17 18:30:13.353 +05:30 [INF] Executed ViewResult - view Index executed in 49.2194ms.
+2025-04-17 18:30:13.362 +05:30 [INF] Executed action MyBudgetTrackerApp.Controllers.HomeController.Index (MyBudgetTrackerApp) in 63.4795ms
+2025-04-17 18:30:13.365 +05:30 [INF] Executed endpoint 'MyBudgetTrackerApp.Controllers.HomeController.Index (MyBudgetTrackerApp)'
+2025-04-17 18:30:13.371 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/ - 200 null text/html; charset=utf-8 210.3654ms
+2025-04-17 18:30:13.381 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 18:30:13.394 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 13.3328ms
+2025-04-17 18:30:13.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2025-04-17 18:30:13.425 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.8406ms
+2025-04-17 18:30:14.723 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/BankBalance/Create - null null
+2025-04-17 18:30:14.735 +05:30 [INF] Executing endpoint 'MyBudgetTrackerApp.Controllers.BankBalanceController.Create (MyBudgetTrackerApp)'
+2025-04-17 18:30:14.744 +05:30 [INF] Route matched with {action = "Create", controller = "BankBalance"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller MyBudgetTrackerApp.Controllers.BankBalanceController (MyBudgetTrackerApp).
+2025-04-17 18:30:14.752 +05:30 [INF] BankBalance Create GET called
+2025-04-17 18:30:14.911 +05:30 [INF] BankBalance Create GET Returned
+2025-04-17 18:30:14.916 +05:30 [INF] Executing ViewResult, running view Create.
+2025-04-17 18:30:14.960 +05:30 [INF] Executed ViewResult - view Create executed in 45.1714ms.
+2025-04-17 18:30:14.976 +05:30 [INF] Executed action MyBudgetTrackerApp.Controllers.BankBalanceController.Create (MyBudgetTrackerApp) in 225.3985ms
+2025-04-17 18:30:14.984 +05:30 [INF] Executed endpoint 'MyBudgetTrackerApp.Controllers.BankBalanceController.Create (MyBudgetTrackerApp)'
+2025-04-17 18:30:14.989 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/BankBalance/Create - 200 null text/html; charset=utf-8 266.1284ms
+2025-04-17 18:30:14.998 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 18:30:14.999 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2025-04-17 18:30:15.004 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 5.4606ms
+2025-04-17 18:30:15.014 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.107ms
+2025-04-17 18:40:25.233 +05:30 [INF] Starting up the Budget Tracker App
+2025-04-17 18:40:25.442 +05:30 [INF] User profile is available. Using 'C:\Users\Elston\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-17 18:40:25.538 +05:30 [INF] Now listening on: https://localhost:7213
+2025-04-17 18:40:25.541 +05:30 [INF] Now listening on: http://localhost:5032
+2025-04-17 18:40:25.591 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-17 18:40:25.593 +05:30 [INF] Hosting environment: Development
+2025-04-17 18:40:25.595 +05:30 [INF] Content root path: D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp
+2025-04-17 18:40:25.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/ - null null
+2025-04-17 18:40:26.014 +05:30 [INF] Executing endpoint 'MyBudgetTrackerApp.Controllers.HomeController.Index (MyBudgetTrackerApp)'
+2025-04-17 18:40:26.039 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller MyBudgetTrackerApp.Controllers.HomeController (MyBudgetTrackerApp).
+2025-04-17 18:40:26.052 +05:30 [INF] Executing ViewResult, running view Index.
+2025-04-17 18:40:26.109 +05:30 [INF] Executed ViewResult - view Index executed in 59.0089ms.
+2025-04-17 18:40:26.117 +05:30 [INF] Executed action MyBudgetTrackerApp.Controllers.HomeController.Index (MyBudgetTrackerApp) in 72.7288ms
+2025-04-17 18:40:26.122 +05:30 [INF] Executed endpoint 'MyBudgetTrackerApp.Controllers.HomeController.Index (MyBudgetTrackerApp)'
+2025-04-17 18:40:26.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/ - 200 null text/html; charset=utf-8 175.2337ms
+2025-04-17 18:40:26.150 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 18:40:26.165 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2025-04-17 18:40:26.182 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 31.9125ms
+2025-04-17 18:40:26.205 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.9504ms
+2025-04-17 18:40:27.642 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/BankBalance/Create - null null
+2025-04-17 18:40:27.654 +05:30 [INF] Executing endpoint 'MyBudgetTrackerApp.Controllers.BankBalanceController.Create (MyBudgetTrackerApp)'
+2025-04-17 18:40:27.666 +05:30 [INF] Route matched with {action = "Create", controller = "BankBalance"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create() on controller MyBudgetTrackerApp.Controllers.BankBalanceController (MyBudgetTrackerApp).
+2025-04-17 18:40:27.671 +05:30 [INF] BankBalance Create GET called
+2025-04-17 18:40:27.837 +05:30 [INF] BankBalance Create GET Returned
+2025-04-17 18:40:27.843 +05:30 [INF] Executing ViewResult, running view Create.
+2025-04-17 18:40:27.885 +05:30 [INF] Executed ViewResult - view Create executed in 42.0889ms.
+2025-04-17 18:40:27.895 +05:30 [INF] Executed action MyBudgetTrackerApp.Controllers.BankBalanceController.Create (MyBudgetTrackerApp) in 224.3604ms
+2025-04-17 18:40:27.903 +05:30 [INF] Executed endpoint 'MyBudgetTrackerApp.Controllers.BankBalanceController.Create (MyBudgetTrackerApp)'
+2025-04-17 18:40:27.906 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/BankBalance/Create - 200 null text/html; charset=utf-8 264.1523ms
+2025-04-17 18:40:27.914 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-17 18:40:27.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2025-04-17 18:40:27.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 6.6526ms
+2025-04-17 18:40:27.948 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.4735ms
+2025-04-17 18:49:55.103 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: This method is not implemented yet.
+   at MyBudgetTrackerApp.Controllers.BankBalanceController.Create()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-17 20:56:47.074 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: This method is not implemented yet.
+   at MyBudgetTrackerApp.Controllers.BankBalanceController.Create() in D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\Controllers\BankBalanceController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
