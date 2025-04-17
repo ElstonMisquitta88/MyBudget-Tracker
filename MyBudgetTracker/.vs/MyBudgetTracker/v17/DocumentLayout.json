@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\controllers\\bankbalancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\controllers\\bankbalancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\views\\expenses\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\views\\expenses\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\views\\expenses\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\views\\expenses\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\views\\bankbalance\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\views\\bankbalance\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\models\\expensecreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\models\\expensecreatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8568C5A3-9965-417F-A2AB-9B504E3DE753}|DataLibrary\\DataLibrary.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\datalibrary\\data\\expensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8568C5A3-9965-417F-A2AB-9B504E3DE753}|DataLibrary\\DataLibrary.csproj|solutionrelative:datalibrary\\data\\expensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\controllers\\bankbalancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\controllers\\bankbalancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,28 +50,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "BankBalanceController.cs",
               "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\BankBalanceController.cs",
               "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Controllers\\BankBalanceController.cs",
               "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\BankBalanceController.cs",
               "RelativeToolTip": "MyBudgetTrackerApp\\Controllers\\BankBalanceController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAuwEYAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:39:12.734Z",
+              "WhenOpened": "2025-04-17T06:11:47.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
+              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
+              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
+              "RelativeToolTip": "MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T06:10:59.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExpenseData.cs",
+              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\DataLibrary\\Data\\ExpenseData.cs",
+              "RelativeDocumentMoniker": "DataLibrary\\Data\\ExpenseData.cs",
+              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\DataLibrary\\Data\\ExpenseData.cs",
+              "RelativeToolTip": "DataLibrary\\Data\\ExpenseData.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-17T05:51:45.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Display.cshtml",
               "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
               "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
               "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
               "RelativeToolTip": "MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-16T16:37:12.329Z",
+              "WhenOpened": "2025-04-17T05:27:17.69Z",
               "EditorCaption": ""
             },
             {
@@ -78,22 +108,9 @@
               "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Controllers\\ExpensesController.cs",
               "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\ExpensesController.cs",
               "RelativeToolTip": "MyBudgetTrackerApp\\Controllers\\ExpensesController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA8wA8AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T16:27:28.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExpenseCreateModel.cs",
-              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Models\\ExpenseCreateModel.cs",
-              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Models\\ExpenseCreateModel.cs",
-              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Models\\ExpenseCreateModel.cs",
-              "RelativeToolTip": "MyBudgetTrackerApp\\Models\\ExpenseCreateModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:25:31.212Z",
               "EditorCaption": ""
             }
           ]

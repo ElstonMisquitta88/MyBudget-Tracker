@@ -3,9 +3,68 @@
     ViewData["Title"] = "Display";
 }
 
-<h1>Display</h1>
+<h1>Add Expense</h1>
 
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddExpense">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
+            <input asp-for="ExpenseSingle.Bank_ID" class="form-control" type="hidden" />
 
-@Model.ExpenseSingle.Id
+            <div class="form-group">
+                <label asp-for="ExpenseSingle.ExpenseDetails" class="control-label"></label>
+                <input asp-for="ExpenseSingle.ExpenseDetails" class="form-control" />
+                <span asp-validation-for="ExpenseSingle.ExpenseDetails" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ExpenseSingle.Amount" class="control-label"></label>
+                <input asp-for="ExpenseSingle.Amount" class="form-control" />
+                <span asp-validation-for="ExpenseSingle.Amount" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" action value="AddExpense" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
 <br />
+
+@* Display list of bank balances *@
+@if (Model.ExpenseList != null)
+{
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">ExpenseDetails</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Date</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+            </tr>
+        </thead>
+
+        @foreach (var _ExpenseList in Model.ExpenseList)
+        {
+            <form asp-action="Update" method="post">
+                <input type="hidden" name="Id" value="@_ExpenseList.Id" />
+                <input type="hidden" name="Bank_ID" value="@_ExpenseList.Bank_ID" />
+            <tr>
+                <td><input type="text" name="ExpenseDetails" value="@_ExpenseList.ExpenseDetails" class="form-control" /></td>
+                <td><input type="text" name="Amount" value="@_ExpenseList.Amount" class="form-control" /></td>
+                <td><input type="text" readonly="readonly" name="Date" value="@_ExpenseList.Date" class="form-control" /></td>
+                <td style="width: 100px;">
+                    <button type="submit" name="actionType" value="Update" class="btn btn-primary">Update</button>
+                </td>
+                <td style="width: 100px;">
+                    <button type="submit" name="actionType" value="Delete" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+            </form>
+        }
+    </table>
+}

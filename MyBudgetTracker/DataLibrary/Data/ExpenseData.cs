@@ -24,4 +24,14 @@ public class ExpenseData : IExpenseData
         return true;
     }
 
+
+    public async Task<List<ExpenseModel>> Get_Expense_ByBankID(int Bank_ID)
+    {
+        DynamicParameters p = new DynamicParameters();
+        p.Add("Bank_ID", Bank_ID);
+        var recs = await _dataAccess.LoadData<ExpenseModel, dynamic>("Proc_GetExpense_ByBankID",p,
+            _connectionString.SqlConnectionName);
+        return recs;
+    }
+
 }

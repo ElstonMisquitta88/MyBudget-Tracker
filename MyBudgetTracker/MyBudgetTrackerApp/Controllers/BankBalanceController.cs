@@ -56,21 +56,17 @@ namespace MyBudgetTrackerApp.Controllers
             switch (actionType)
             {
                 case "AddExpense":
-                    // Add Expense logic here
-                    TempData["Message"] = "Expense added!";
                     // Move to Different View
-                    return RedirectToAction("Display", "Expenses", new { id = BankBal.Id });
+                    return RedirectToAction("Display", "Expenses", new { Bank_ID = BankBal.Id });
                     break;
 
                     //TODO
                 case "Update":
-                    //await _BankData.UpdateBankBalanceForMonth(BankBal);
                     TempData["Message"] = "Bank balance updated!";
                     break;
 
                   //TODO
                 case "Delete":
-                    //await _BankData.DeleteBankBalanceForMonth(BankBal.Id);
                     TempData["Message"] = "Bank balance deleted!";
                     break;
 

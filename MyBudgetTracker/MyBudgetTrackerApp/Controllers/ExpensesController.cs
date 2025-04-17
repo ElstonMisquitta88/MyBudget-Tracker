@@ -13,21 +13,51 @@ namespace MyBudgetTrackerApp.Controllers
         {
             _ExpenseData = ExpenseData;
         }
-        public async Task<IActionResult> Display(int id)
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+
+        public async Task<IActionResult> Display(int Bank_ID)
         {
             ExpenseCreateModel expenseCreateModel = new ExpenseCreateModel();
 
             ExpenseModel singobj = new ExpenseModel();
-            singobj.Id = id;
+            singobj.Bank_ID = Bank_ID;
             expenseCreateModel.ExpenseSingle = singobj;
-            
-            // TODO
-            //expenseCreateModel.ExpenseList = await _ExpenseData.GetAll_ExpenseForMonth();
+            expenseCreateModel.ExpenseList = await _ExpenseData.Get_Expense_ByBankID(Bank_ID);
             return View(expenseCreateModel);
         }
-        public IActionResult Index()
+
+        [HttpPost]
+        public async Task<IActionResult> AddExpense(ExpenseModel ExpenseSingle)
         {
-            return View();
+            bool _result = await _ExpenseData.AddExpense(ExpenseSingle);
+            return RedirectToAction("Display", "Expenses", new { Bank_ID = ExpenseSingle.Bank_ID });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(ExpenseModel ExpenseSingle, string actionType)
+        {
+            switch (actionType)
+            {
+                //TODO
+                case "Update":
+                    TempData["Message"] = "Bank balance updated!";
+                    break;
+
+                //TODO
+                case "Delete":
+                    TempData["Message"] = "Bank balance deleted!";
+                    break;
+
+                default:
+                    TempData["Message"] = "Unknown action.";
+                    break;
+            }
+
+            return RedirectToAction("Display", "Expenses", new { Bank_ID = ExpenseSingle.Bank_ID });
         }
     }
 }

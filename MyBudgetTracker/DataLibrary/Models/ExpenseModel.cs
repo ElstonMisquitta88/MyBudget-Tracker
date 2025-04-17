@@ -9,7 +9,7 @@ namespace DataLibrary.Models;
 public class ExpenseModel
 {
     public int Id { get; set; }
-    public string Bank_ID { get; set; }
+    public int Bank_ID { get; set; }
     public string ExpenseDetails { get; set; }
     public decimal Amount { get; set; }
     public string Date { get; set; }
