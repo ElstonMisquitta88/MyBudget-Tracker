@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\views\\expenses\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\views\\expenses\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\controllers\\bankbalancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\controllers\\bankbalancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8568C5A3-9965-417F-A2AB-9B504E3DE753}|DataLibrary\\DataLibrary.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\datalibrary\\data\\expensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8568C5A3-9965-417F-A2AB-9B504E3DE753}|DataLibrary\\DataLibrary.csproj|solutionrelative:datalibrary\\data\\expensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\views\\bankbalance\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\views\\bankbalance\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\controllers\\expensescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,67 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BankBalanceController.cs",
-              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\BankBalanceController.cs",
-              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Controllers\\BankBalanceController.cs",
-              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\BankBalanceController.cs",
-              "RelativeToolTip": "MyBudgetTrackerApp\\Controllers\\BankBalanceController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T06:11:47.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
-              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
-              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
-              "RelativeToolTip": "MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADEAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-17T06:10:59.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExpenseData.cs",
-              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\DataLibrary\\Data\\ExpenseData.cs",
-              "RelativeDocumentMoniker": "DataLibrary\\Data\\ExpenseData.cs",
-              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\DataLibrary\\Data\\ExpenseData.cs",
-              "RelativeToolTip": "DataLibrary\\Data\\ExpenseData.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-17T05:51:45.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Display.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
-              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
-              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
-              "RelativeToolTip": "MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
-              "ViewState": "AgIAACUAAAAAAAAAAAAcwDYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-17T05:27:17.69Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ExpensesController.cs",
               "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\ExpensesController.cs",
               "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Controllers\\ExpensesController.cs",
               "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\ExpensesController.cs",
               "RelativeToolTip": "MyBudgetTrackerApp\\Controllers\\ExpensesController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA4wCwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwBkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T16:27:28.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
+              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
+              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
+              "RelativeToolTip": "MyBudgetTrackerApp\\Views\\Expenses\\Display.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAE4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-17T05:27:17.69Z",
               "EditorCaption": ""
             }
           ]

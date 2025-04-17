@@ -5,6 +5,8 @@
 
 <h1>Add Expense</h1>
 
+
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -35,6 +37,9 @@
 <br />
 
 @* Display list of bank balances *@
+@{
+    decimal totalAmount = 0;
+}
 @if (Model.ExpenseList != null)
 {
     <table class="table">
@@ -50,12 +55,13 @@
 
         @foreach (var _ExpenseList in Model.ExpenseList)
         {
+            totalAmount += _ExpenseList.Amount; // 👈 Add amount here
             <form asp-action="Update" method="post">
                 <input type="hidden" name="Id" value="@_ExpenseList.Id" />
                 <input type="hidden" name="Bank_ID" value="@_ExpenseList.Bank_ID" />
             <tr>
                 <td><input type="text" name="ExpenseDetails" value="@_ExpenseList.ExpenseDetails" class="form-control" /></td>
-                <td><input type="text" name="Amount" value="@_ExpenseList.Amount" class="form-control" /></td>
+                <td><input type="text" name="Amount" value="@_ExpenseList.Amount" class="form-control amount" /></td>
                 <td><input type="text" readonly="readonly" name="Date" value="@_ExpenseList.Date" class="form-control" /></td>
                 <td style="width: 100px;">
                     <button type="submit" name="actionType" value="Update" class="btn btn-primary">Update</button>
@@ -66,5 +72,56 @@
             </tr>
             </form>
         }
+
+        <tfoot>
+            <tr>
+                <td><strong>Main Bank Balance</strong></td>
+                <td><strong class="text-success" id="BankBalance">@Model.BankDetails.Amount.ToString("N2")</strong></td>
+                <td colspan="3"></td>
+            </tr>
+
+            <tr>
+                <td><strong>Total Debit</strong></td>
+                <td><strong class="text-danger" id="totaldebit">@totalAmount.ToString("N2")</strong></td>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td><strong>Balance Amount</strong></td>
+                <td><strong class="text-primary" id="totalAmount">@totalAmount.ToString("N2")</strong></td>
+                <td colspan="3"></td>
+            </tr>
+        </tfoot>
     </table>
+}
+
+@section Scripts {
+    <script>
+        function calculateTotal() {
+            let total = 0;
+            let BankBalance = 0;
+            document.querySelectorAll('.amount').forEach(input => {
+                let val = parseFloat(input.value);
+                if (!isNaN(val)) {
+                    total += val;
+                }
+            });
+
+            // Fetch Value from BankBalance
+            BankBalance = parseFloat(document.getElementById('BankBalance').textContent.replace(/,/g, ''));
+
+            // Total Debit
+             document.getElementById('totaldebit').textContent = total.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+            // Calculate the total amount
+            document.getElementById('totalAmount').textContent = (BankBalance - total).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        }
+
+        // Initial calculation
+        calculateTotal();
+
+        // Listen to input changes
+        document.querySelectorAll('.amount').forEach(input => {
+            input.addEventListener('input', calculateTotal);
+        });
+    </script>
 }

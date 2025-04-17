@@ -8,10 +8,12 @@ namespace MyBudgetTrackerApp.Controllers
     public class ExpensesController : Controller
     {
         private readonly IExpenseData _ExpenseData;
+        private readonly IBankBalanceData _BankData;
 
-        public ExpensesController(IExpenseData ExpenseData)
+        public ExpensesController(IExpenseData ExpenseData, IBankBalanceData BankData)
         {
             _ExpenseData = ExpenseData;
+            _BankData = BankData;
         }
         public IActionResult Index()
         {
@@ -23,10 +25,18 @@ namespace MyBudgetTrackerApp.Controllers
         {
             ExpenseCreateModel expenseCreateModel = new ExpenseCreateModel();
 
+            // (1) Bank Details
+            var _bnkdetails = _BankData.Get_GetBankBalance_ByID(Bank_ID);
+            expenseCreateModel.BankDetails= _bnkdetails.Result.FirstOrDefault();
+
+            // (2) Expense Details
             ExpenseModel singobj = new ExpenseModel();
             singobj.Bank_ID = Bank_ID;
             expenseCreateModel.ExpenseSingle = singobj;
             expenseCreateModel.ExpenseList = await _ExpenseData.Get_Expense_ByBankID(Bank_ID);
+
+
+
             return View(expenseCreateModel);
         }
 

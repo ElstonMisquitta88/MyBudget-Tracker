@@ -39,6 +39,18 @@ public class BankBalanceData : IBankBalanceData
         return recs;
     }
 
+    public async Task<List<BankBalanceModel>> Get_GetBankBalance_ByID(int Bank_ID)
+    {
+        DynamicParameters p = new DynamicParameters();
+        p.Add("ID", Bank_ID);
+        var recs = await _dataAccess.LoadData<BankBalanceModel, dynamic>("Proc_GetBankBalance_ByID", p,
+            _connectionString.SqlConnectionName);
+        return recs;
+    }
+
+  
+
+
 
 
 }
