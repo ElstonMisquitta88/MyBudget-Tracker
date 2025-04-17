@@ -14,6 +14,8 @@ public class ExpenseData : IExpenseData
         _connectionString = connectionString;
     }
 
+
+
     public async Task<bool> AddExpense(ExpenseModel _expdata)
     {
         DynamicParameters p = new DynamicParameters();
@@ -24,7 +26,6 @@ public class ExpenseData : IExpenseData
         return true;
     }
 
-
     public async Task<List<ExpenseModel>> Get_Expense_ByBankID(int Bank_ID)
     {
         DynamicParameters p = new DynamicParameters();
@@ -33,5 +34,17 @@ public class ExpenseData : IExpenseData
             _connectionString.SqlConnectionName);
         return recs;
     }
+
+    public async Task<bool> UpdateExpense(ExpenseModel _expdata)
+    {
+        DynamicParameters p = new DynamicParameters();
+        p.Add("ID", _expdata.Id);
+        p.Add("ExpenseDetails", _expdata.ExpenseDetails);
+        p.Add("Amount", _expdata.Amount);
+        await _dataAccess.SaveData("Proc_UpdateExpense", p, _connectionString.SqlConnectionName);
+        return true;
+    }
+
+
 
 }

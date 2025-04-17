@@ -8,5 +8,6 @@ namespace DataLibrary.Data
 
         Task<List<ExpenseModel>> Get_Expense_ByBankID(int Bank_ID);
 
+        Task<bool> UpdateExpense(ExpenseModel _expdata);
     }
 }

@@ -27,7 +27,7 @@ namespace MyBudgetTrackerApp.Controllers
 
             // (1) Bank Details
             var _bnkdetails = _BankData.Get_GetBankBalance_ByID(Bank_ID);
-            expenseCreateModel.BankDetails= _bnkdetails.Result.FirstOrDefault();
+            expenseCreateModel.BankDetails = _bnkdetails.Result.FirstOrDefault();
 
             // (2) Expense Details
             ExpenseModel singobj = new ExpenseModel();
@@ -52,21 +52,27 @@ namespace MyBudgetTrackerApp.Controllers
         {
             switch (actionType)
             {
-                //TODO
                 case "Update":
-                    TempData["Message"] = "Bank balance updated!";
+                    bool _result = await _ExpenseData.UpdateExpense(ExpenseSingle);
+                    if (_result)
+                    {
+                        TempData["SuccessMessage"] = "Expense Updated successfully!";
+                    }
+                    else
+                    {
+                        TempData["ErrorMessage"] = "Error updating expense.";
+                    }
                     break;
 
                 //TODO
                 case "Delete":
-                    TempData["Message"] = "Bank balance deleted!";
+                    TempData["Message"] = "Expense deleted!";
                     break;
 
                 default:
                     TempData["Message"] = "Unknown action.";
                     break;
             }
-
             return RedirectToAction("Display", "Expenses", new { Bank_ID = ExpenseSingle.Bank_ID });
         }
     }
