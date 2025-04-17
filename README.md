@@ -1,5 +1,4 @@
 # MyBudget-Tracker
-MyBudget Tracker
 
 > [!NOTE]
 > Progress on 17/04/2025
