@@ -6,6 +6,30 @@ An ASP.NET Core MVC application for tracking **bank balances and expenses**, pow
 
 ## 🗂️ Project Structure
 
+### 🗃️ Database Schema 
+
+📂 Database: BudgetTracker
+
+### 🏦 BankBalance Table
+
+| Column Name | Data Type | Description |
+|    :---:     |     :---:      |     :---:     |
+| Id   | int     | Primary Key (auto-increment)
+| Month_Year     | varchar      | Month & year (e.g., "Apr-2025")  |
+| Amount     | money      | Balance for that period   |
+
+
+### 💸 Expense Table
+
+| Column Name | Data Type | Description |
+|    :---:     |     :---:      |     :---:     |
+| Id   | int     | Primary Key (auto-increment)
+| Bank_ID   | int     | Foreign Key referencing BankBalance
+| ExpenseDetails   | varchar     | Description of the expense
+| Amount   | money     | Amount spent
+| Date   | datetime     | Date of the expense
+
+
 ### 📁 MyBudgetTrackerApp (MVC Frontend)
 
 ```plaintext
