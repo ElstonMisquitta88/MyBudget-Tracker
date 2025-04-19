@@ -1,4 +1,4 @@
-# 💰 MyBudgetTrackerApp
+# 💰 Budget Tracker App
 
 An ASP.NET Core MVC application for tracking **bank balances and expenses**, powered by a clean class library (`DataLibrary`) for data access and model separation. Includes robust logging with Serilog and real-time log viewing through SEQ.
 
@@ -51,3 +51,30 @@ Models/
 │   └── ExpenseModel.cs            # POCO for expense entity
 
 ```
+
+---
+### 🔧 Tech Stack & Features
+✅ ASP.NET Core MVC (.NET 6/7+)
+
+✅ Clean architecture with separation via a class library
+
+✅ Dapper for fast and lightweight data access
+
+✅ Serilog for structured logging
+
+✅ Logs stored in rolling text files and visualized via SEQ
+
+✅ Flash messages displayed in Bootstrap modal message boxes
+
+✅ TempData used to pass messages across redirects
+
+---
+### ✍️ Future Enhancements
+ 
+- [ ] Add pagination and filtering for expenses
+
+- [ ] Add user authentication and account-level tracking
+
+- [ ] Export reports as Excel or PDF
+
+- [ ] Use async streams or background jobs for large imports
