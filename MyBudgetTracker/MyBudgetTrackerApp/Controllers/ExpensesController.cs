@@ -9,11 +9,13 @@ namespace MyBudgetTrackerApp.Controllers
     {
         private readonly IExpenseData _ExpenseData;
         private readonly IBankBalanceData _BankData;
+        private readonly ILogger<ExpensesController> _logger;
 
-        public ExpensesController(IExpenseData ExpenseData, IBankBalanceData BankData)
+        public ExpensesController(IExpenseData ExpenseData, IBankBalanceData BankData, ILogger<ExpensesController> logger)
         {
             _ExpenseData = ExpenseData;
             _BankData = BankData;
+            _logger = logger;
         }
         public IActionResult Index()
         {
@@ -23,73 +25,97 @@ namespace MyBudgetTrackerApp.Controllers
 
         public async Task<IActionResult> Display(int Bank_ID)
         {
-            ExpenseCreateModel expenseCreateModel = new ExpenseCreateModel();
+            try
+            {
+                ExpenseCreateModel expenseCreateModel = new ExpenseCreateModel();
 
-            // (1) Bank Details
-            var _bnkdetails = _BankData.Get_GetBankBalance_ByID(Bank_ID);
-            expenseCreateModel.BankDetails = _bnkdetails.Result.FirstOrDefault();
+                // (1) Bank Details
+                var _bnkdetails = await _BankData.Get_GetBankBalance_ByID(Bank_ID);
+                expenseCreateModel.BankDetails = _bnkdetails.FirstOrDefault();
 
-            // (2) Expense Details
-            ExpenseModel singobj = new ExpenseModel();
-            singobj.Bank_ID = Bank_ID;
-            expenseCreateModel.ExpenseSingle = singobj;
-            expenseCreateModel.ExpenseList = await _ExpenseData.Get_Expense_ByBankID(Bank_ID);
+                // (2) Expense Details
+                ExpenseModel singobj = new ExpenseModel();
+                singobj.Bank_ID = Bank_ID;
+                expenseCreateModel.ExpenseSingle = singobj;
+                expenseCreateModel.ExpenseList = await _ExpenseData.Get_Expense_ByBankID(Bank_ID);
 
-
-
-            return View(expenseCreateModel);
+                return View(expenseCreateModel);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error in Expense Display");
+                return View("Error");
+            }
         }
 
         [HttpPost]
         public async Task<IActionResult> AddExpense(ExpenseModel ExpenseSingle)
         {
-            bool _result = await _ExpenseData.AddExpense(ExpenseSingle);
-            if (_result)
+            try
             {
-                TempData["SuccessMessage"] = "Expense Updated successfully!";
+                bool _result = await _ExpenseData.AddExpense(ExpenseSingle);
+                if (_result)
+                {
+                    TempData["SuccessMessage"] = "Expense Updated successfully!";
+                }
+                else
+                {
+                    TempData["ErrorMessage"] = "Error updating expense.";
+                }
+                return RedirectToAction("Display", "Expenses", new { Bank_ID = ExpenseSingle.Bank_ID });
+
             }
-            else
+            catch (Exception ex)
             {
-                TempData["ErrorMessage"] = "Error updating expense.";
+                _logger.LogError(ex, "Error in AddExpense");
+                return View("Error");
             }
-            return RedirectToAction("Display", "Expenses", new { Bank_ID = ExpenseSingle.Bank_ID });
         }
 
         [HttpPost]
         public async Task<IActionResult> Update(ExpenseModel ExpenseSingle, string actionType)
         {
-            switch (actionType)
+            try
             {
-                case "Update":
-                    bool _result = await _ExpenseData.UpdateExpense(ExpenseSingle);
-                    if (_result)
-                    {
-                        TempData["SuccessMessage"] = "Expense Updated successfully!";
-                    }
-                    else
-                    {
-                        TempData["ErrorMessage"] = "Error updating expense.";
-                    }
-                    break;
+                switch (actionType)
+                {
+                    case "Update":
+                        bool _result = await _ExpenseData.UpdateExpense(ExpenseSingle);
+                        if (_result)
+                        {
+                            TempData["SuccessMessage"] = "Expense Updated successfully!";
+                        }
+                        else
+                        {
+                            TempData["ErrorMessage"] = "Error updating expense.";
+                        }
+                        break;
 
-               
-                case "Delete":
-                    bool _result_delete = true;  //TODO
-                    if (_result_delete)
-                    {
-                        TempData["SuccessMessage"] = "Expense deleted successfully!";
-                    }
-                    else
-                    {
-                        TempData["ErrorMessage"] = "Error deleting expense.";
-                    }
-                    break;
 
-                default:
-                    TempData["Message"] = "Unknown action.";
-                    break;
+                    case "Delete":
+                        bool _result_delete = true;  //TODO
+                        if (_result_delete)
+                        {
+                            TempData["SuccessMessage"] = "Expense deleted successfully!";
+                        }
+                        else
+                        {
+                            TempData["ErrorMessage"] = "Error deleting expense.";
+                        }
+                        break;
+
+                    default:
+                        TempData["Message"] = "Unknown action.";
+                        break;
+                }
+                return RedirectToAction("Display", "Expenses", new { Bank_ID = ExpenseSingle.Bank_ID });
+
             }
-            return RedirectToAction("Display", "Expenses", new { Bank_ID = ExpenseSingle.Bank_ID });
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error in Update Expense");
+                return View("Error");
+            }
         }
     }
 }
