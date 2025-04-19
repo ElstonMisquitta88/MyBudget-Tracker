@@ -54,11 +54,13 @@ namespace MyBudgetTrackerApp.Controllers
                 {
                     _logger.LogInformation("BankBalance Create POST called");
                     ViewBag.Message = "Bank Balance Created Successfully";
+                    TempData["SuccessMessage"] = "Bank Balance Added : " + BankBal.Month_Year;
                     ModelState.Clear();
                 }
                 else
                 {
                     _logger.LogInformation("BankBalance Create POST called");
+                    TempData["ErrorMessage"] = "Error in adding Bank Balance : " + BankBal.Month_Year;
                     ViewBag.Message = "Bank Balance Creation Failed";
                     ModelState.Clear();
                 }
@@ -66,10 +68,11 @@ namespace MyBudgetTrackerApp.Controllers
             }
             catch (Exception ex)
             {
+                TempData["ErrorMessage"] = "Error in adding Bank Balance";
                 _logger.LogError(ex, "Error in BankBalance Create POST");
                 return View("Error");
             }
-           
+
         }
 
 
@@ -88,13 +91,13 @@ namespace MyBudgetTrackerApp.Controllers
                     //TODO
                     case "Update":
                         _logger.LogInformation("BankBalance Update Expense called");
-                        TempData["Message"] = "Bank balance updated!";
+                        TempData["SuccessMessage"] = "Bank Balance Updated successfully!";
                         break;
 
                     //TODO
                     case "Delete":
                         _logger.LogInformation("BankBalance Delete Expense called");
-                        TempData["Message"] = "Bank balance deleted!";
+                        TempData["SuccessMessage"] = "Bank Balance Deleted";
                         break;
 
                     default:

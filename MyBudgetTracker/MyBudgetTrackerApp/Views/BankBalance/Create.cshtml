@@ -5,6 +5,72 @@
 
 <h4>Monthly Bank Balance</h4>
 
+@if (TempData["SuccessMessage"] != null)
+{
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const modal = new bootstrap.Modal(document.getElementById('expenseModal'));
+            modal.show();
+
+            setTimeout(() => {
+                modal.hide();
+            }, 1500);
+        });
+    </script>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const modal = new bootstrap.Modal(document.getElementById('errorModal'));
+            modal.show();
+
+            setTimeout(() => {
+                modal.hide();
+            }, 1500);
+        });
+    </script>
+}
+
+<!-- Success Modal -->
+<div class="modal fade" id="expenseModal" tabindex="-1" aria-labelledby="expenseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content border-success">
+
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="expenseModalLabel">Success</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body text-success fw-semibold">
+                @TempData["SuccessMessage"]
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Error Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content border-danger">
+
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="errorModalLabel">Error</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body text-danger fw-semibold">
+                @TempData["ErrorMessage"]
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
 <hr />
 <div class="row">
     <div class="col-md-4">
