@@ -24,62 +24,91 @@ namespace MyBudgetTrackerApp.Controllers
 
         public async Task<IActionResult> Create()
         {
-            _logger.LogInformation("BankBalance Create GET called");
-            BankBalanceCreateDisplayModel modeldt = new BankBalanceCreateDisplayModel();
-            modeldt.BankBalLst = await _BankData.GetAll_BankBalanceForMonth();
-            _logger.LogInformation("BankBalance Create GET Returned");
-            return View(modeldt);
+            try
+            {
+                _logger.LogInformation("BankBalance Create GET called");
+                BankBalanceCreateDisplayModel modeldt = new BankBalanceCreateDisplayModel();
+                modeldt.BankBalLst = await _BankData.GetAll_BankBalanceForMonth();
+                _logger.LogInformation("BankBalance Create GET Returned");
+                return View(modeldt);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error in BankBalance Create GET");
+                return View("Error");
+            }
         }
 
 
         [HttpPost]
         public async Task<IActionResult> Create(BankBalanceModel BankBal)
         {
-            if (ModelState.IsValid == false)
+            try
             {
-                return View();
+                if (ModelState.IsValid == false)
+                {
+                    return View();
+                }
+                bool _result = await _BankData.CreateBankBalanceForMonth(BankBal);
+                if (_result)
+                {
+                    _logger.LogInformation("BankBalance Create POST called");
+                    ViewBag.Message = "Bank Balance Created Successfully";
+                    ModelState.Clear();
+                }
+                else
+                {
+                    _logger.LogInformation("BankBalance Create POST called");
+                    ViewBag.Message = "Bank Balance Creation Failed";
+                    ModelState.Clear();
+                }
+                return RedirectToAction("Create");
             }
-            bool _result = await _BankData.CreateBankBalanceForMonth(BankBal);
-            if (_result)
+            catch (Exception ex)
             {
-                ViewBag.Message = "Bank Balance Created Successfully";
-                ModelState.Clear();
+                _logger.LogError(ex, "Error in BankBalance Create POST");
+                return View("Error");
             }
-            else
-            {
-                ViewBag.Message = "Bank Balance Creation Failed";
-                ModelState.Clear();
-            }
-            return RedirectToAction("Create");
+           
         }
 
 
         [HttpPost]
         public async Task<IActionResult> Update(BankBalanceModel BankBal, string actionType)
         {
-            switch (actionType)
+            try
             {
-                case "AddExpense":
-                    // Move to Different View
-                    return RedirectToAction("Display", "Expenses", new { Bank_ID = BankBal.Id });
-                    break;
+                switch (actionType)
+                {
+                    case "AddExpense":
+                        // Move to Different View
+                        _logger.LogInformation("BankBalance Add Expense called");
+                        return RedirectToAction("Display", "Expenses", new { Bank_ID = BankBal.Id });
 
                     //TODO
-                case "Update":
-                    TempData["Message"] = "Bank balance updated!";
-                    break;
+                    case "Update":
+                        _logger.LogInformation("BankBalance Update Expense called");
+                        TempData["Message"] = "Bank balance updated!";
+                        break;
 
-                  //TODO
-                case "Delete":
-                    TempData["Message"] = "Bank balance deleted!";
-                    break;
+                    //TODO
+                    case "Delete":
+                        _logger.LogInformation("BankBalance Delete Expense called");
+                        TempData["Message"] = "Bank balance deleted!";
+                        break;
 
-                default:
-                    TempData["Message"] = "Unknown action.";
-                    break;
+                    default:
+                        TempData["Message"] = "Unknown action.";
+                        break;
+                }
+
+                return RedirectToAction("Create");
             }
-
-            return RedirectToAction("Create");
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error in BankBalance Update POST");
+                return View("Error");
+            }
         }
 
 

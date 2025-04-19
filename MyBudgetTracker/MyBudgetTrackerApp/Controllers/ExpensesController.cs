@@ -44,6 +44,14 @@ namespace MyBudgetTrackerApp.Controllers
         public async Task<IActionResult> AddExpense(ExpenseModel ExpenseSingle)
         {
             bool _result = await _ExpenseData.AddExpense(ExpenseSingle);
+            if (_result)
+            {
+                TempData["SuccessMessage"] = "Expense Updated successfully!";
+            }
+            else
+            {
+                TempData["ErrorMessage"] = "Error updating expense.";
+            }
             return RedirectToAction("Display", "Expenses", new { Bank_ID = ExpenseSingle.Bank_ID });
         }
 
@@ -64,9 +72,17 @@ namespace MyBudgetTrackerApp.Controllers
                     }
                     break;
 
-                //TODO
+               
                 case "Delete":
-                    TempData["Message"] = "Expense deleted!";
+                    bool _result_delete = true;  //TODO
+                    if (_result_delete)
+                    {
+                        TempData["SuccessMessage"] = "Expense deleted successfully!";
+                    }
+                    else
+                    {
+                        TempData["ErrorMessage"] = "Error deleting expense.";
+                    }
                     break;
 
                 default:
