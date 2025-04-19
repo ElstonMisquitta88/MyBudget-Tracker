@@ -1,11 +1,28 @@
-# MyBudget-Tracker
+# 📦 DataLibrary (.NET Class Library)
 
-> [!NOTE]
-> Progress on 17/04/2025
-> 
-> (1) 2 Views Done to Add Main Bank Balance and Add/ View Expenses
+A modular and testable class library that handles **data access and model definitions** for financial tracking apps using **Dapper** and clean architecture.
 
-![Sprint_01_Pic_01](https://github.com/user-attachments/assets/577ebeb7-364d-4ae2-b2f0-95afbb120438)
+---
+
+## 🗂️ Project Structure
+
+```plaintext
+DataLibrary/
+│
+├── Data/
+│   ├── BankBalanceData.cs        # Handles DB ops for bank balances
+│   ├── ExpenseData.cs            # Handles DB ops for expenses
+│   ├── IBankBalanceData.cs       # Interface for BankBalanceData
+│   └── IExpenseData.cs           # Interface for ExpenseData
+│
+├── DB/
+│   ├── ConnectionStringData.cs   # Stores DB connection name
+│   ├── IDataAccess.cs            # Dapper abstraction
+│   └── SqlDb.cs                  # Dapper implementation
+│
+└── Models/
+    ├── BankBalanceModel.cs       # POCO for bank balance
+    └── ExpenseModel.cs           # POCO for expense
 
 
-![Sprint_01_Pic_02](https://github.com/user-attachments/assets/a5be09dc-94de-4d68-8d46-572e380202e1)
+
