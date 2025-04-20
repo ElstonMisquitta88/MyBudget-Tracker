@@ -2,6 +2,14 @@
 
 An ASP.NET Core MVC application for tracking **bank balances and expenses**, powered by a clean class library (`DataLibrary`) for data access and model separation. Includes robust logging with Serilog and real-time log viewing through SEQ.
 
+![01_Git](https://github.com/user-attachments/assets/ede42b95-dd07-4ace-9cbf-f3bf0510127f)
+
+![02_Gi](https://github.com/user-attachments/assets/ec9fd2a5-7cd2-4920-8707-b6041abf5a9d)
+
+![03_Git](https://github.com/user-attachments/assets/d649107e-9844-4d01-8367-9529fddf2d14)
+
+
+
 ---
 
 ## 🗂️ Project Structure
