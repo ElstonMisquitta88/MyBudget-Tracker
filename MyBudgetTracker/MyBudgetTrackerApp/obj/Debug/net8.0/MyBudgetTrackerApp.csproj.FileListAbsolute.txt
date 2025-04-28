@@ -289,3 +289,5 @@ D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\S
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\System.Text.Json.dll
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
+D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\StackExchange.Redis.dll

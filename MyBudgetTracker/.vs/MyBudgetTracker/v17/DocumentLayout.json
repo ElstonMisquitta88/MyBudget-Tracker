@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\views\\bankbalance\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\views\\bankbalance\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,14 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
-              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
-              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
-              "RelativeToolTip": "MyBudgetTrackerApp\\Views\\BankBalance\\Create.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T04:35:00.868Z",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MyBudgetTrackerApp\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAkwDIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:46:18.706Z",
               "EditorCaption": ""
             }
           ]
