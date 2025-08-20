@@ -1,5 +1,6 @@
 using DataLibrary.Data;
 using DataLibrary.Db;
+using MyBudgetTrackerApp.Exceptions;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -27,16 +28,29 @@ builder.Services.AddSingleton<IBankBalanceData, BankBalanceData>();
 builder.Services.AddSingleton<IExpenseData, ExpenseData>();
 //[-]Custom Services
 
-
+//[+]Exception Handling
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
+//[-]Exception Handling
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+//// Configure the HTTP request pipeline.
+//if (!app.Environment.IsDevelopment())
+//{
+//    app.UseExceptionHandler("/Home/Error");
+//    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+//    app.UseHsts();
+//}
+
+if (app.Environment.IsDevelopment())
 {
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    // And in your pipeline
+    app.UseExceptionHandler();
+}
+else
+{
+    app.UseExceptionHandler("/error"); // Redirects to /error endpoint
 }
 
 app.UseHttpsRedirection();
@@ -45,6 +59,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+
 
 app.MapControllerRoute(
     name: "default",

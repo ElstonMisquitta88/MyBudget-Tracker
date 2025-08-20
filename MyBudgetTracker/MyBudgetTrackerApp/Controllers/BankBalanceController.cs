@@ -18,11 +18,12 @@ namespace MyBudgetTrackerApp.Controllers
         }
         public IActionResult Index()
         {
+            
             return View();
         }
 
 
-        public async Task<IActionResult> Create()
+        public async Task<ActionResult> Create()
         {
             try
             {

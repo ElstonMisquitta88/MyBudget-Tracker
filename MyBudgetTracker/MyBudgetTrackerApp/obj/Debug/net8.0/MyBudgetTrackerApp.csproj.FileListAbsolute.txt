@@ -252,12 +252,6 @@ D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\s
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets.build.json
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets.development.json
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets\msbuild.MyBudgetTrackerApp.Microsoft.AspNetCore.StaticWebAssets.props
-D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets\msbuild.MyBudgetTrackerApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets\msbuild.build.MyBudgetTrackerApp.props
-D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MyBudgetTrackerApp.props
-D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MyBudgetTrackerApp.props
-D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets.pack.json
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\MyBudget.DA1DF27D.Up2Date
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\MyBudgetTrackerApp.dll
@@ -291,3 +285,8 @@ D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\r
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\GitHub\MyBudget-Tracker\MyBudgetTracker\MyBudgetTrackerApp\obj\Debug\net8.0\staticwebassets.build.json.cache

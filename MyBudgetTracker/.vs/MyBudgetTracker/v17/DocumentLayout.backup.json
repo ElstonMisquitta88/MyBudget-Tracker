@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\exceptions\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\exceptions\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|d:\\github\\mybudget-tracker\\mybudgettracker\\mybudgettrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03BE9AC0-9BF5-4270-BF60-61498A0EE4CB}|MyBudgetTrackerApp\\MyBudgetTrackerApp.csproj|solutionrelative:mybudgettrackerapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,9 +48,35 @@
               "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "MyBudgetTrackerApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwB0AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-28T14:46:18.706Z",
+              "WhenOpened": "2025-08-20T15:15:33.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Program.cs",
+              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Program.cs",
+              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Program.cs",
+              "RelativeToolTip": "MyBudgetTrackerApp\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T15:14:02.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GlobalExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Exceptions\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "MyBudgetTrackerApp\\Exceptions\\GlobalExceptionHandlerMiddleware.cs",
+              "ToolTip": "D:\\GitHub\\MyBudget-Tracker\\MyBudgetTracker\\MyBudgetTrackerApp\\Exceptions\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "MyBudgetTrackerApp\\Exceptions\\GlobalExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T15:11:45.974Z",
               "EditorCaption": ""
             }
           ]

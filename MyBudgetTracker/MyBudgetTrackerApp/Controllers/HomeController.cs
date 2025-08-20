@@ -17,6 +17,10 @@ namespace MyBudgetTrackerApp.Controllers
         {
             return View();
         }
+        public IActionResult Throw()
+        {
+            throw new Exception(message: "Test exception");
+        }
 
         public IActionResult Privacy()
         {
